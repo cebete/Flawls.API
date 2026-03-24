@@ -1,0 +1,6 @@
+@Flawls.API_HostAddress = http://localhost:5077
+
+GET {{Flawls.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
