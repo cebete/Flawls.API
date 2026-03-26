@@ -17,8 +17,11 @@ public class StatsController(AppDbContext db) : ControllerBase
         var products = await db.Products.Include(p => p.Variants).ToListAsync();
 
         var lowStock = products
-            .SelectMany(p => p.Variants.Where(v => v.Quantity <= 3).Select(v =>
-                new LowStockItem(v.Id, v.BarcodeId, p.Name, v.Color, v.Size, v.Quantity)))
+            .Where(p => p.LowStockThreshold > 0)
+            .SelectMany(p => p.Variants
+                .Where(v => v.Quantity <= p.LowStockThreshold)
+                .Select(v => new LowStockItem(
+                    v.Id, v.BarcodeId, p.Name, v.Color, v.Size, v.Quantity)))
             .OrderBy(x => x.Quantity)
             .ToList();
 

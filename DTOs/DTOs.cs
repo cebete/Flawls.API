@@ -3,7 +3,7 @@
 namespace Flawls.API.DTOs
 {
     public record LoginRequest(string Username, string Password);
-    public record LoginResponse(string Token, string Username, string Role);
+    public record LoginResponse(string Token, string Username, string Role, string Language);
     public record CreateUserRequest(string Username, string Password, string Role = "staff");
 
     public record CreateProductRequest(
@@ -13,7 +13,8 @@ namespace Flawls.API.DTOs
         decimal SellingPrice,
         string? ImageUrl,
         string? Notes,
-        List<CreateVariantRequest> Variants
+        List<CreateVariantRequest> Variants,
+        int LowStockThreshold = 3
     );
 
     public record UpdateProductRequest(
@@ -22,7 +23,8 @@ namespace Flawls.API.DTOs
         decimal CostPrice,
         decimal SellingPrice,
         string? ImageUrl,
-        string? Notes
+        string? Notes,
+        int LowStockThreshold = 3
     );
 
     public record ProductResponse(
@@ -35,7 +37,8 @@ namespace Flawls.API.DTOs
         string? Notes,
         DateTime CreatedAt,
         List<VariantResponse> Variants,
-        int TotalStock
+        int TotalStock,
+        int LowStockThreshold
     );
 
     public record CreateVariantRequest(
@@ -87,4 +90,6 @@ namespace Flawls.API.DTOs
         string Reason, 
         DateTime ScannedAt
     );
+
+    public record UpdateLanguageRequest(string Language);
 }

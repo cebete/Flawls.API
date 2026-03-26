@@ -19,7 +19,7 @@ public class AuthController(AppDbContext db, TokenService tokenService) : Contro
         if (user is null || !BCrypt.Net.BCrypt.Verify(req.Password, user.PasswordHash))
             return Unauthorized(new { message = "Invalid username or password." });
 
-        return Ok(new LoginResponse(tokenService.CreateToken(user), user.Username, user.Role));
+        return Ok(new LoginResponse(tokenService.CreateToken(user), user.Username, user.Role, user.Language));
     }
 
     [HttpPost("users")]
@@ -46,4 +46,44 @@ public class AuthController(AppDbContext db, TokenService tokenService) : Contro
         username = User.Identity?.Name,
         role = User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value
     });
+
+    [HttpGet("users")]
+    [Authorize(Roles = "admin")]
+    public async Task<ActionResult> GetUsers()
+    {
+        var users = await db.Users
+            .OrderBy(u => u.CreatedAt)
+            .Select(u => new { u.Id, u.Username, u.Role, u.CreatedAt })
+            .ToListAsync();
+        return Ok(users);
+    }
+
+    [HttpDelete("users/{id:int}")]
+    [Authorize(Roles = "admin")]
+    public async Task<IActionResult> DeleteUser(int id)
+    {
+        var currentUserId = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)!.Value);
+        if (id == currentUserId)
+            return BadRequest(new { message = "You cannot delete your own account." });
+
+        var user = await db.Users.FindAsync(id);
+        if (user is null) return NotFound();
+
+        db.Users.Remove(user);
+        await db.SaveChangesAsync();
+        return NoContent();
+    }
+
+    [HttpPatch("language")]
+    [Authorize]
+    public async Task<ActionResult> UpdateLanguage([FromBody] UpdateLanguageRequest req)
+    {
+        var userId = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)!.Value);
+        var user = await db.Users.FindAsync(userId);
+        if (user is null) return NotFound();
+
+        user.Language = req.Language == "tr" ? "tr" : "en";
+        await db.SaveChangesAsync();
+        return Ok(new { user.Language });
+    }
 }

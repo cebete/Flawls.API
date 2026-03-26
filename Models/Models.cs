@@ -7,6 +7,7 @@
         public string? Category { get; set; }
         public decimal CostPrice { get; set; }
         public decimal SellingPrice { get; set; }
+        public int LowStockThreshold { get; set; } = 0;
         public string? ImageUrl { get; set; }
         public string? Notes { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
@@ -46,6 +47,7 @@
         public string Username { get; set; } = string.Empty;
         public string PasswordHash { get; set; } = string.Empty;
         public string Role { get; set; } = "staff";
+        public string Language { get; set; } = "en";
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

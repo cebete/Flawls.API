@@ -19,7 +19,8 @@ public class ProductsController(AppDbContext db) : ControllerBase
         p.Variants.Select(v => new VariantResponse(
             v.Id, v.BarcodeId, v.Color, v.Size, v.Quantity, v.ProductId, p.Name
         )).ToList(),
-        p.Variants.Sum(v => v.Quantity)
+        p.Variants.Sum(v => v.Quantity),
+        p.LowStockThreshold
     );
 
     [HttpGet]
@@ -53,6 +54,7 @@ public class ProductsController(AppDbContext db) : ControllerBase
             Category = req.Category?.Trim(),
             CostPrice = req.CostPrice,
             SellingPrice = req.SellingPrice,
+            LowStockThreshold = req.LowStockThreshold,
             ImageUrl = req.ImageUrl?.Trim(),
             Notes = req.Notes?.Trim()
         };
@@ -87,6 +89,7 @@ public class ProductsController(AppDbContext db) : ControllerBase
         p.Category = req.Category?.Trim();
         p.CostPrice = req.CostPrice;
         p.SellingPrice = req.SellingPrice;
+        p.LowStockThreshold = req.LowStockThreshold;
         p.ImageUrl = req.ImageUrl?.Trim();
         p.Notes = req.Notes?.Trim();
 
@@ -103,5 +106,45 @@ public class ProductsController(AppDbContext db) : ControllerBase
         db.Products.Remove(p);
         await db.SaveChangesAsync();
         return NoContent();
+    }
+
+    [HttpPost("{id:int}/duplicate")]
+    public async Task<ActionResult<ProductResponse>> Duplicate(int id)
+    {
+        var source = await db.Products
+            .Include(p => p.Variants)
+            .FirstOrDefaultAsync(p => p.Id == id);
+
+        if (source is null) return NotFound();
+
+        var copy = new Product
+        {
+            Name = source.Name + " (copy)",
+            Category = source.Category,
+            CostPrice = source.CostPrice,
+            SellingPrice = source.SellingPrice,
+            ImageUrl = source.ImageUrl,
+            Notes = source.Notes,
+            LowStockThreshold = source.LowStockThreshold,
+        };
+
+        foreach (var v in source.Variants)
+        {
+            string barcodeId;
+            do { barcodeId = BarcodeService.Generate(); }
+            while (await db.Variants.AnyAsync(x => x.BarcodeId == barcodeId));
+
+            copy.Variants.Add(new Variant
+            {
+                BarcodeId = barcodeId,
+                Color = v.Color,
+                Size = v.Size,
+                Quantity = 0,
+            });
+        }
+
+        db.Products.Add(copy);
+        await db.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetById), new { id = copy.Id }, ToResponse(copy));
     }
 }

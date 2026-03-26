@@ -67,4 +67,38 @@ public class VariantsController(AppDbContext db) : ControllerBase
         await db.SaveChangesAsync();
         return NoContent();
     }
+
+    [HttpGet("{id:int}/history")]
+    public async Task<ActionResult> GetHistory(int id)
+    {
+        var variant = await db.Variants
+            .Include(v => v.Product)
+            .FirstOrDefaultAsync(v => v.Id == id);
+
+        if (variant is null) return NotFound();
+
+        var movements = await db.StockMovements
+            .Where(m => m.VariantId == id)
+            .OrderByDescending(m => m.CreatedAt)
+            .Take(50)
+            .Select(m => new
+            {
+                m.Id,
+                m.Delta,
+                m.Reason,
+                m.CreatedAt
+            })
+            .ToListAsync();
+
+        return Ok(new
+        {
+            variantId = variant.Id,
+            barcodeId = variant.BarcodeId,
+            color = variant.Color,
+            size = variant.Size,
+            currentQuantity = variant.Quantity,
+            productName = variant.Product.Name,
+            movements
+        });
+    }
 }
