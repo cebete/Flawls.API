@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\services\\barcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:services\\barcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\controllers\\scancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:controllers\\scancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -19,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\services\\barcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|solutionrelative:services\\barcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B187627-7E87-F427-EB9B-D72A89EE64DA}|Flawls.API.csproj|c:\\users\\raven\\onedrive\\documentos\\flawls.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,6 +83,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Models.cs",
+              "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Models\\Models.cs",
+              "RelativeDocumentMoniker": "Models\\Models.cs",
+              "ToolTip": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Models\\Models.cs",
+              "RelativeToolTip": "Models\\Models.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAwwDAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T20:29:11.55Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImageController.cs",
+              "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Controllers\\ImageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ImageController.cs",
+              "ToolTip": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Controllers\\ImageController.cs",
+              "RelativeToolTip": "Controllers\\ImageController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwCMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T15:27:25.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T13:01:28.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BarcodeService.cs",
+              "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Services\\BarcodeService.cs",
+              "RelativeDocumentMoniker": "Services\\BarcodeService.cs",
+              "ToolTip": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Services\\BarcodeService.cs",
+              "RelativeToolTip": "Services\\BarcodeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T20:51:57.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -86,12 +140,11 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-26T05:57:58.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-26T05:57:58.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -103,33 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DTOs.cs",
-              "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\DTOs\\DTOs.cs",
-              "RelativeDocumentMoniker": "DTOs\\DTOs.cs",
-              "ToolTip": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\DTOs\\DTOs.cs",
-              "RelativeToolTip": "DTOs\\DTOs.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAswD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T20:39:43.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Models.cs",
-              "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Models\\Models.cs",
-              "RelativeDocumentMoniker": "Models\\Models.cs",
-              "ToolTip": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Models\\Models.cs",
-              "RelativeToolTip": "Models\\Models.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAADwvzAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T20:29:11.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -137,12 +164,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-24T20:56:43.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T20:56:43.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -150,12 +176,11 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-24T21:03:37.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T21:03:37.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "20260326054132_AddUserLanguage.cs",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Migrations\\20260326054132_AddUserLanguage.cs",
               "RelativeDocumentMoniker": "Migrations\\20260326054132_AddUserLanguage.cs",
@@ -167,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ScanController.cs",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Controllers\\ScanController.cs",
               "RelativeDocumentMoniker": "Controllers\\ScanController.cs",
@@ -175,12 +200,11 @@
               "RelativeToolTip": "Controllers\\ScanController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T21:08:18.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T21:08:18.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "Services\\TokenService.cs",
@@ -192,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "StatsController.cs",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Controllers\\StatsController.cs",
               "RelativeDocumentMoniker": "Controllers\\StatsController.cs",
@@ -204,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "VariantsController.cs",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Controllers\\VariantsController.cs",
               "RelativeDocumentMoniker": "Controllers\\VariantsController.cs",
@@ -216,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
@@ -228,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -240,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "20260326041754_AddLowStockThreshold.cs",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Migrations\\20260326041754_AddLowStockThreshold.cs",
               "RelativeDocumentMoniker": "Migrations\\20260326041754_AddLowStockThreshold.cs",
@@ -252,19 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BarcodeService.cs",
-              "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Services\\BarcodeService.cs",
-              "RelativeDocumentMoniker": "Services\\BarcodeService.cs",
-              "ToolTip": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Services\\BarcodeService.cs",
-              "RelativeToolTip": "Services\\BarcodeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T20:51:57.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "20260324210045_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\raven\\OneDrive\\Documentos\\Flawls.API\\Migrations\\20260324210045_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20260324210045_InitialCreate.cs",

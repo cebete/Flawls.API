@@ -71,10 +71,18 @@ if (app.Environment.IsDevelopment())
 
 if (!app.Environment.IsProduction())
     app.UseHttpsRedirection();
+
 app.UseCors("FrontendPolicy");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new Microsoft.Extensions.FileProviders.PhysicalFileProvider(
+        Path.Combine(builder.Environment.ContentRootPath, "uploads")),
+    RequestPath = "/uploads"
+});
 
 // Seed default admin user
 using (var scope = app.Services.CreateScope())
